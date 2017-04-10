@@ -1,20 +1,19 @@
-var todo = ["Buy New Computer"];
-
-var input = prompt('What would you like to do ');
-
-
-while (input !== "quit") {
-    /*Handdle input*/
-    /*ask again for new input */
-    if (input === "list") {
-
-        console.log(todo);
-    } else if (input === "new") {
-        /*Ask for new to do */
-        var newtodo = prompt("Enter New To Do");
-        /*add the new to do  to the array*/
-        todo.push(newtodo);
+/*GLOBAL VARIBLES*/
+var todos = ['feed the turtle'];
+var input = prompt('What Would you like To do');
+/*while loop */
+while(input !== "quit"){
+    
+    if(input === "list"){
+        
+             console.log(todos);
+        /*add the new var to the array*/
     }
-    input = prompt('What would you like to do ');
-}
-console.log("OK , YOU  QUIT THE APP");
+    else if (input === "new"){
+        var newinput = prompt('add new todo item');
+        
+        todos.push(newinput);
+             }
+    input = prompt('What Would you like To do');
+      }
+console.log('Yay you quit the app');
