@@ -22,6 +22,14 @@ a,a:hover, a:visited,a:active{
     text-decoration: none;
     color: inherit;
 }
+p{
+    line-height: 150%;
+    letter-spacing: 150%;
+    font-size: 12px;
+}
+.title{
+    color: var(--titleColor);
+}
 /* ======     =========
     main Wrapper 
    ======     =========*/
@@ -47,7 +55,6 @@ a,a:hover, a:visited,a:active{
     padding-left: 0;
     line-height: 150%;
     flex-basis: 320px;
-    color: var(--titleColor);
     font-weight: bold;
    }
    .nav{
@@ -63,7 +70,6 @@ a,a:hover, a:visited,a:active{
    }
     .nav_link span{
         margin-top: 5px;
-        color: var(--titleColor);
         font-weight: bold;
         font-size: 20px;
     }
@@ -133,15 +139,11 @@ a,a:hover, a:visited,a:active{
     position: relative;
     padding: 15px;
     background: var(--mainBgColor);
-    font-size: 14px;
+    font-size: 12px;
 }
 .slideShowDescription h2{
     text-transform: uppercase;
     line-height: 140%;
-    color: var(--titleColor);
-}
-.slideShowDescription p{
-    color: var(--titleColor)
 }
 .slideShowDescription::before{
     display: block;
@@ -157,3 +159,42 @@ a,a:hover, a:visited,a:active{
     z-index: 200;
     transform:rotate(45deg);
 }
+/* ======     =========
+    service css 
+   ======     =========*/
+   .service{
+       display: flex;
+       margin-top: 80px;
+   }
+   .service_item{
+       padding:10px;
+       display: flex; 
+       justify-content: space-between;
+       flex-wrap: wrap;
+   }
+   .service_item span{
+       flex-basis:30%;
+       color: var(--titleColor);
+       font-size: 50px;
+   }
+   .service_item h2{
+       width: 70%;
+       text-transform: uppercase;
+       text-align: left;
+       font-size: 20px;
+       line-height: 150%;
+       margin-bottom: 30px;
+   }
+   .service_item p{
+       flex-basis: 100%;
+       line-height: 160%;
+       color: var(--titleColor);
+       margin-bottom: 15px;
+   }
+   .service_item .service_link{
+       color: var(--titleColor);
+       font-weight: bold;
+       text-transform: uppercase;
+       padding: 20px 0 ;
+       font-size: 20px;
+   }
